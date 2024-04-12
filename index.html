@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 1 Project</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="item">
+            <h2 class="ui header">
+                <div class="content">MindWellnessHub</div>
+                <div class="sub header" id="subtitle">Your little safe Haven</div>
+            </h2>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button id="menuButton" class="ui green button" type='button'>
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="dropdown-content">
+            <a href="#meditation">Meditation</a>
+            <a href="#journal">Journal</a>
+            <a href="#professionals">Professionals</a>
+            <a href="#forum">Forum</a>
+        </div>
+    </div>
+
+    <main>
+        <div id="meditation" class="container">
+            <div class="box">
+                <h2>Meditation and Relaxation</h2>
+                <p>Through focused breathing, mindfulness, or visualization techniques, individuals can cultivate a
+                    sense of calm amidst life's chaos. By quieting the mind and tuning into the present moment,
+                    meditation enables one to release tension, reduce stress, and attain a state of inner peace.</p>
+                <div class="extra content">
+                    <button id="meditationButton" class="ui green button" type='button'>Get Affirmation</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="box" id="journal">
+            <h2>Journal</h2>
+            <p>Journaling can serve as a therapeutic practice, helping to alleviate stress, anxiety, and confusion by
+                externalizing internal struggles. </p>
+            <form id="journalForm">
+                <label for="feelings">How are you feeling?</label>
+                <textarea id="feelings" name="feelings" rows="4" cols="50"></textarea>
+                <br>
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <br>
+                <button id="submitJournal" class="ui green button" type="button">Submit</button>
+            </form>
+        </div>
+        <div class="box" id="professionals">
+            <h2>Professionals</h2>
+            <p>It's okay to seek out professionals and people who could possibly aid us in our mental health journey.
+                Someone to hold your hand through all the hurdles.</p>
+            <form id="consultationForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                <br>
+                <button id="submitConsultation" class="ui green button" type="button">Request Consultation</button>
+            </form>
+            <h3>Options:</h3>
+            <h4>Professional 1</h4>
+            <p>Expertise: Mental Health Counseling</p>
+            <p>Availability: Monday to Friday, 9 AM to 5 PM</p>
+            <p>Consultation Fee: ksh 3,000 per hour</p>
+            <br>
+            <h4>Professional 2</h4>
+            <p>Expertise: Family Therapy</p>
+            <p>Availability: Tuesday and Thursday, 10 AM to 2 PM</p>
+            <p>Consultation Fee: ksh 5,000 per hour</p>
+        </div>
+        <div class="box" id="forum">
+            <h2>Communities</h2>
+            <p>Meet with people who are or have been exactly where you are and interact. It's always comforting to know
+                YOU ARE NOT ALONE.</p>
+            <a href="https://discord.com/invite/TCGT4yWg" target="_blank" class="ui green button">Join Discord Group</a>
+        </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

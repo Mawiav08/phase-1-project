@@ -1,0 +1,26 @@
+{
+  "messages": [
+    "You are capable of achieving great things!",
+    "You are worthy!",
+    "You are doing amazing!!",
+    "You are loved and appreciated!",
+    "You have the power to overcome any obstacle!",
+    "You are a beacon of light in the world!"
+  ],
+  "professionals": [
+    {
+      "id": 1,
+      "name": "Professional 1",
+      "expertise": "Mental Health Counseling",
+      "availability": "Monday to Friday, 9 AM to 5 PM",
+      "consultationFee": "ksh 3,000 per hour"
+    },
+    {
+      "id": 2,
+      "name": "Professional 2",
+      "expertise": "Family Therapy",
+      "availability": "Tuesday and Thursday, 10 AM to 2 PM",
+      "consultationFee": "ksh 5,000 per hour"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+body{
+    background-color: #3aafa9;
+}
+.heading{
+    background-image: url(/assets/istockphoto-1069539210-612x612.jpg);
+    margin-bottom: 2px;
+    padding:5px 0px 5px 15px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.title{
+    background-color: black;
+    padding:5px;
+    color:white;
+
+}
+
+.container{
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-gap: 10px;
+}
+
+
+.box{
+    width: 90%;
+    height:90%;
+    padding: 10px;
+    margin: 5%;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    background-color:#def2f1;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
