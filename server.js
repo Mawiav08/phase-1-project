@@ -1,28 +1,34 @@
 const http = require('http');
-const fs = require('fs');
-const path = require('path');
+// Define the affirmations data
+const affirmations = [
+  "You are capable of achieving your goals.",
+  "You are loved and appreciated.",
+  "You have the power to create change.",
+  "You are worthy!"
+];
 
-const PORT = 3001;
-
+// the HTTP server
 const server = http.createServer((req, res) => {
-    // Set the content type to JSON
+  // Set CORS headers to allow requests from any origin
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  
+  // Handle GET requests to /affirmations
+  if (req.url === '/affirmations' && req.method === 'GET') {
+    // Set Content-Type header
     res.setHeader('Content-Type', 'application/json');
-
-    // Read the db.json file
-    fs.readFile(path.join(__dirname, 'db.json'), (err, data) => {
-        if (err) {
-            console.error('Error reading db.json:', err);
-            res.statusCode = 500;
-            res.end(JSON.stringify({ error: 'Internal server error' }));
-            return;
-        }
-
-        // Serve the JSON data
-        res.statusCode = 200;
-        res.end(data);
-    });
+    
+    // Convert affirmations array to JSON and send it as response
+    res.end(JSON.stringify(affirmations));
+  } else {
+    // If the request is not to /affirmations, return 404 Not Found
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.end('404 Not Found');
+  }
 });
 
+// Start the server on port 3001
+const PORT = 3001;
 server.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is listening on port ${PORT}`);
 });
