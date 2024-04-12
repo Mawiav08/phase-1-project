@@ -1,10 +1,12 @@
 const http = require('http');
 // Define the affirmations data
 const affirmations = [
-  "You are capable of achieving your goals.",
-  "You are loved and appreciated.",
-  "You have the power to create change.",
-  "You are worthy!"
+  "You are capable of achieving great things!",
+  "You are worthy!",
+  "You are doing amazing!!",
+  "You are loved and appreciated!",
+  "You have the power to overcome any obstacle!",
+  "You are a beacon of light in the world!"
 ];
 
 // the HTTP server
