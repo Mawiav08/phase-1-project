@@ -25,8 +25,11 @@ Git clone https://mawiav08.github.io/phase-1-project/
 
 ## MVP Features
 1.Users can view affirmation messages or relaxation exercises by simply clicking a button such as session morning relaxation.
+
 2.Users can make journal entries based on date and/ or mood.
+
 3.Users can reach out to professionals and see their expertise, availability, and consultation fees.
+
 4.Users can browse existing forum threads and read discussions from other users.
 
 
