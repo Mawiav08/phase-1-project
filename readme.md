@@ -22,6 +22,15 @@ Git clone https://mawiav08.github.io/phase-1-project/
 # Live Link
 [Git](https://mawiav08.github.io/phase-1-project/)
 
+
+## MVP Features
+Users can view affirmation messages or relaxation exercises by simply clicking a button such as session morning relaxation.
+Users can make journal entries based on date and/ or mood.
+Users can access a library of resources categorized by topics such as stress management techniques, etc.
+Users can reach out to professionals and see their expertise, availability, and consultation fees.
+Users can browse existing forum threads and read discussions from other users.
+
+
 ## Technologies used
 HTML
 CSS
