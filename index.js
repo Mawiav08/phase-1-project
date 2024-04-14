@@ -7,7 +7,7 @@ document.getElementById("meditationButton").addEventListener("click", function()
             const randomIndex = Math.floor(Math.random() * data.length);
             const affirmation = data[randomIndex];
             
-            // Display the affirmation message
+            // Affirmation message
             alert(affirmation);
         })
         .catch(error => {
